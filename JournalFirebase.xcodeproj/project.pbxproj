@@ -13,6 +13,7 @@
 		2AD76B142543AE2D00FD7B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B122543AE2D00FD7B0D /* Main.storyboard */; };
 		2AD76B162543AE2F00FD7B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B152543AE2F00FD7B0D /* Assets.xcassets */; };
 		2AD76B192543AE2F00FD7B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B172543AE2F00FD7B0D /* LaunchScreen.storyboard */; };
+		2AD76B222543AE7F00FD7B0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B212543AE7F00FD7B0D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2AD76B152543AE2F00FD7B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD76B182543AE2F00FD7B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AD76B1A2543AE2F00FD7B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD76B212543AE7F00FD7B0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2AD76B152543AE2F00FD7B0D /* Assets.xcassets */,
 				2AD76B172543AE2F00FD7B0D /* LaunchScreen.storyboard */,
 				2AD76B1A2543AE2F00FD7B0D /* Info.plist */,
+				2AD76B212543AE7F00FD7B0D /* GoogleService-Info.plist */,
 			);
 			path = JournalFirebase;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AD76B192543AE2F00FD7B0D /* LaunchScreen.storyboard in Resources */,
+				2AD76B222543AE7F00FD7B0D /* GoogleService-Info.plist in Resources */,
 				2AD76B162543AE2F00FD7B0D /* Assets.xcassets in Resources */,
 				2AD76B142543AE2D00FD7B0D /* Main.storyboard in Resources */,
 			);
