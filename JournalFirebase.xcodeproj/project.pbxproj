@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2AD76B0D2543AE2D00FD7B0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD76B0C2543AE2D00FD7B0D /* AppDelegate.swift */; };
 		2AD76B0F2543AE2D00FD7B0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD76B0E2543AE2D00FD7B0D /* SceneDelegate.swift */; };
-		2AD76B112543AE2D00FD7B0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD76B102543AE2D00FD7B0D /* ViewController.swift */; };
 		2AD76B142543AE2D00FD7B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B122543AE2D00FD7B0D /* Main.storyboard */; };
 		2AD76B162543AE2F00FD7B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B152543AE2F00FD7B0D /* Assets.xcassets */; };
 		2AD76B192543AE2F00FD7B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B172543AE2F00FD7B0D /* LaunchScreen.storyboard */; };
@@ -22,7 +21,6 @@
 		2AD76B092543AE2D00FD7B0D /* JournalFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD76B0C2543AE2D00FD7B0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AD76B0E2543AE2D00FD7B0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2AD76B102543AE2D00FD7B0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AD76B132543AE2D00FD7B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AD76B152543AE2F00FD7B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD76B182543AE2F00FD7B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 				11F2B57F175EBD797D7BEEEB /* Pods-JournalFirebase.debug.xcconfig */,
 				52E56899F0A18AEFD02539EC /* Pods-JournalFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,16 +72,71 @@
 		2AD76B0B2543AE2D00FD7B0D /* JournalFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				2ADF6FB02543B46D007075FE /* Models */,
+				2ADF6FAE2543B45F007075FE /* Views */,
+				2ADF6FAB2543B44B007075FE /* Controllers */,
+				2AD76B362543B40E00FD7B0D /* Resources */,
+			);
+			path = JournalFirebase;
+			sourceTree = "<group>";
+		};
+		2AD76B362543B40E00FD7B0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2AD76B0C2543AE2D00FD7B0D /* AppDelegate.swift */,
 				2AD76B0E2543AE2D00FD7B0D /* SceneDelegate.swift */,
-				2AD76B102543AE2D00FD7B0D /* ViewController.swift */,
-				2AD76B122543AE2D00FD7B0D /* Main.storyboard */,
 				2AD76B152543AE2F00FD7B0D /* Assets.xcassets */,
 				2AD76B172543AE2F00FD7B0D /* LaunchScreen.storyboard */,
 				2AD76B1A2543AE2F00FD7B0D /* Info.plist */,
 				2AD76B212543AE7F00FD7B0D /* GoogleService-Info.plist */,
 			);
-			path = JournalFirebase;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ADF6FAB2543B44B007075FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF6FAD2543B456007075FE /* ModelControllers */,
+				2ADF6FAC2543B450007075FE /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2ADF6FAC2543B450007075FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2ADF6FAD2543B456007075FE /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		2ADF6FAE2543B45F007075FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF6FAF2543B462007075FE /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ADF6FAF2543B462007075FE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2AD76B122543AE2D00FD7B0D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2ADF6FB02543B46D007075FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E8F72A1988EA3092C78B75AE /* Frameworks */ = {
@@ -210,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD76B112543AE2D00FD7B0D /* ViewController.swift in Sources */,
 				2AD76B0D2543AE2D00FD7B0D /* AppDelegate.swift in Sources */,
 				2AD76B0F2543AE2D00FD7B0D /* SceneDelegate.swift in Sources */,
 			);
@@ -362,7 +413,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = JournalFirebase/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalFirebase/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = JournalFirebase/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalFirebase/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
