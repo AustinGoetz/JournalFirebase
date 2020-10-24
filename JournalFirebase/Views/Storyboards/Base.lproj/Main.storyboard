@@ -11,13 +11,13 @@
         <!--Journal Entries-->
         <scene sceneID="qyF-Zc-Kqh">
             <objects>
-                <tableViewController id="skR-HS-36s" sceneMemberID="viewController">
+                <tableViewController id="skR-HS-36s" customClass="EntryListTableViewController" customModule="JournalFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jqr-Kl-kyj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7BK-lw-Mvz" detailTextLabel="CiG-Lb-pAi" style="IBUITableViewCellStyleSubtitle" id="FyY-aW-A2M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" textLabel="7BK-lw-Mvz" detailTextLabel="CiG-Lb-pAi" style="IBUITableViewCellStyleSubtitle" id="FyY-aW-A2M">
                                 <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FyY-aW-A2M" id="dXa-Xi-1rL">
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="719" y="-6"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry Detail View Controller-->
         <scene sceneID="Ka0-I5-ZxD">
             <objects>
-                <viewController id="s4r-Qg-uyC" sceneMemberID="viewController">
+                <viewController id="s4r-Qg-uyC" customClass="EntryDetailViewController" customModule="JournalFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="58F-lu-MTW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +88,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-X4-yLr">
                                         <rect key="frame" x="0.0" y="660" width="375" height="30"/>
                                         <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="s4r-Qg-uyC" eventType="touchUpInside" id="QsM-QV-98s"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -102,8 +105,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kjz-8w-7Di">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wMV-4M-8Lq"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wMV-4M-8Lq">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="s4r-Qg-uyC" id="zqd-t8-AtE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="IbT-rU-lCV" id="7ar-pL-aam"/>
+                        <outlet property="titleTextField" destination="kke-58-8gs" id="Ynx-qO-YJ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3u-Au-ESW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

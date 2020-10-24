@@ -10,6 +10,8 @@ import Foundation
 class EntryController {
     
     // MARK: - Properties
+    /// Singleton
+    static let shared = EntryController()
     /// Source of Truth
     var entries: [Entry] = []
     
@@ -19,5 +21,11 @@ class EntryController {
         let newEntry = Entry(title: title, body: body)
         
         entries.append(newEntry)
+    }
+    
+    // Update
+    func update(entry: Entry, title: String, body: String) {
+        entry.title = title
+        entry.body = body
     }
 }
