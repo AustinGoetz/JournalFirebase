@@ -28,4 +28,11 @@ class EntryController {
         entry.title = title
         entry.body = body
     }
+    
+    // Delete
+    func remove(entry: Entry) {
+        guard let indexOfEntryToDelete = entries.firstIndex(of: entry) else { return }
+        
+        entries.remove(at: indexOfEntryToDelete)
+    }
 }

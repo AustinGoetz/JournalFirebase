@@ -18,3 +18,9 @@ class Entry {
         self.timestamp = timestamp
     }
 }
+
+extension Entry: Equatable {
+    static func == (lhs: Entry, rhs: Entry) -> Bool {
+        return lhs.timestamp == rhs.timestamp
+    }
+}
