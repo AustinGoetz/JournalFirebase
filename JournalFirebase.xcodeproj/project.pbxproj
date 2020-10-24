@@ -14,6 +14,7 @@
 		2AD76B192543AE2F00FD7B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B172543AE2F00FD7B0D /* LaunchScreen.storyboard */; };
 		2AD76B222543AE7F00FD7B0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD76B212543AE7F00FD7B0D /* GoogleService-Info.plist */; };
 		2ADF6FB32543B5E2007075FE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF6FB22543B5E2007075FE /* Entry.swift */; };
+		2ADF6FB62543B827007075FE /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF6FB52543B827007075FE /* EntryController.swift */; };
 		F39C73A37412D8EB7BC2C428 /* Pods_JournalFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891B6BC98378F01D8A5EE250 /* Pods_JournalFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		2AD76B1A2543AE2F00FD7B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AD76B212543AE7F00FD7B0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2ADF6FB22543B5E2007075FE /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		2ADF6FB52543B827007075FE /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		52E56899F0A18AEFD02539EC /* Pods-JournalFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JournalFirebase.release.xcconfig"; path = "Target Support Files/Pods-JournalFirebase/Pods-JournalFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		891B6BC98378F01D8A5EE250 /* Pods_JournalFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JournalFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 		2ADF6FAD2543B456007075FE /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ADF6FB52543B827007075FE /* EntryController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				2ADF6FB32543B5E2007075FE /* Entry.swift in Sources */,
 				2AD76B0D2543AE2D00FD7B0D /* AppDelegate.swift in Sources */,
+				2ADF6FB62543B827007075FE /* EntryController.swift in Sources */,
 				2AD76B0F2543AE2D00FD7B0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
